@@ -1,22 +1,21 @@
 # SpellcastingImprovements
 
-**Version:** 1.1.0  
+**Version:** 1.1.1  
 **Author:** the-xorcist  
-**Release Date:** 2026-02-15
+**Release Date:** February 19, 2026
 
 ## Description
 
-A quality-of-life mod for Erenshor that enhances the spellcasting system with fixes for spell stacking, buff management, movement speed mechanics, and spellbook management.
+A quality-of-life mod for Erenshor that enhances the spellcasting system with fixes for spell stacking, buff management, movement speed mechanics, spellbook management, and crowd control mechanics.
 
 ## Features
 
-- **Spell Stacking Fix**: Automatically removes lower-level spells when casting a higher-level spell on the same line
-- **Buff Message Fix**: Prevents status messages from appearing when beneficial spells are blocked by higher-level effects
-- **Click-to-Remove Buffs**: Click on your buff icons to remove beneficial spells instantly
-- **Backward Movement Speed**: Configurable percentage of movement speed buffs now applies to backward movement (default 50%)
-- **Spellbook Move/Swap**: Right-click a spell to select it, then click another slot to move or swap positions (works across pages)
-- **Spellbook Delete**: New "Delete Spell" button with confirmation dialog to remove unwanted spells
-- **Page Wrapping**: Spellbook navigation wraps from last page to first and vice versa
+- **DoT Break Fix** - Prevents damage-over-time (DoT) effects from triggering the 20% chance to break crowd control effects like roots and mezzes
+- **Resist Break Notifications** - Displays chat messages when targets break free from CC effects due to resist checks
+- **Spell Stacking Fix** - Automatically removes lower-level spells when casting higher-level versions on the same spell line
+- **Click-Off Buffs** - Click on buff icons to remove beneficial spells from yourself
+- **Spellbook Management** - Right-click spells to move/swap them in your spellbook, plus a delete button to remove unwanted spells
+- **Backward Speed Cap Fix** - Allows movement speed buffs to increase backward movement speed (configurable percentage)
 
 ## Installation
 
@@ -25,9 +24,17 @@ A quality-of-life mod for Erenshor that enhances the spellcasting system with fi
 3. Launch the game
 4. (Optional) Copy `the-xorcist.spellcastingimprovements.cfg` to your `BepInEx/config` folder for preset defaults
 
+## Configuration
+
+All options can be configured in `BepInEx/config/the-xorcist.spellcastingimprovements.cfg`:
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| BackwardSpeedBuffPercent | 50 | Percentage of movement buff applied to backward speed cap (0-100) |
+
 ## Changelog
 
-### Version 1.1.0 (2026-02-15)
+### v1.1.1 - February 19, 2026
 - Initial release
 
 ## Source Code
